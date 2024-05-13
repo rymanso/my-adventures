@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.alimatha {
+    height: 50%;
+    object-fit: cover;
+    object-position: 0 55%;
+}
+
+.bigLogo {
+    height: 300px;
+    object-fit: scale-down;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.embarkText {
+    text-align: center;
+    font-size: 28px;
+}

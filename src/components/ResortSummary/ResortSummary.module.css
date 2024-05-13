@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+}
+
+.resortName{
+    font-size: 42px;
+}
+
+.slogan {
+    padding-left: 20px;
+    font-size: 22px;
+}
+
+.imgContainer{
+    margin: auto;
+    padding: 5vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+.bigImg {
+    border-radius: 16px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.6 
+}
+.content {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
