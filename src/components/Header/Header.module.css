@@ -9,7 +9,7 @@
 }
 
 .banner * {
-  color: black;
+  color: black !important;
 }
 
 .logo {
@@ -54,6 +54,7 @@
   max-width: 150px;
   padding: 20px;
   visibility: visible;
+  color: black;
 }
 
 .sidebar a,
@@ -73,4 +74,8 @@ div {
 .closeSidebar svg {
   max-width: 20px;
   width: 100%;
+}
+
+.sidebar * {
+  color: black !important;
 }

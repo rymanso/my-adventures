@@ -41,7 +41,7 @@ export const Header = () => {
         <div className={styles.closeSidebar}>
           <RxCross1 onClick={() => setExpandedSidebar(false)} />
         </div>
-        <a href="/my-dive-school">My Dive School</a>
+        <a href="/my-dive">My Dive</a>
 
         <a href="/">Contact Us</a>
       </div>
