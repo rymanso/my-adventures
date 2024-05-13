@@ -2,9 +2,6 @@
 
 Very standard CRA app, to be honest the auto-generated readme below is pretty bang-on on how to set up.
 
-App preview is being deployed to aws amplify at:
-https://dev9690.dm7hanrwrosk1.amplifyapp.com/
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
