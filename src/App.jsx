@@ -1,7 +1,7 @@
 import { Home } from "./pages/Home/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import { MyDiveSchool } from "./pages/MyDiveSchool/MyDiveSchool";
+import { MyDive } from "./pages/MyDive/MyDive";
 
 const router = createBrowserRouter([
   {
@@ -9,8 +9,8 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/my-dive-school",
-    element: <MyDiveSchool />,
+    path: "/my-dive",
+    element: <MyDive />,
   },
 ]);
 

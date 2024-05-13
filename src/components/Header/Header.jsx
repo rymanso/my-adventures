@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import styles from "./Header.module.css";
 import logo from "./logo.png";
 import { isMobile } from "react-device-detect";
-import {  RxCross1, RxHamburgerMenu } from "react-icons/rx";
+import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
 
 export const Header = () => {
@@ -24,7 +24,7 @@ export const Header = () => {
           ) : (
             <>
               <span>
-                <a href="/my-dive-school">My Dive School</a>
+                <a href="/my-dive">My Dive</a>
               </span>
               <span>
                 <a href="/">Contact Us</a>

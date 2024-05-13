@@ -7,14 +7,14 @@ import equipment from "./equipment.webp";
 import fishing from "./fishing.webp";
 import fishingMorning from "./fishingmorning.jpeg";
 
-import styles from "./MyDiveSchool.module.css";
+import styles from "./MyDive.module.css";
 
 import { GridPage, GridTextBox } from "../../components/GridPage/GridPage";
 
-export const MyDiveSchool = () => {
+export const MyDive = () => {
   return (
     <div className={styles.container}>
-      <GridPage title="My Dive School">
+      <GridPage title="My Dive">
         <img src={tanks} alt="Divers with tanks" />
         <GridTextBox title="About Us">
           Welcome to My Adventures, the world's first floating dive center in
