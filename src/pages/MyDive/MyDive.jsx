@@ -114,7 +114,6 @@ export const MyDive = () => {
       </GridPage>
       <GridPage title="Team" id="team">
         <img src={moocho} alt="Man diver" />
-
         <GridTextBox title="Hi, I am Moocho">
           "Yo-ho! I'm Moocho, a captain and diver for two decades, exploring the
           Maldives' depths year-round. From coral to currents, I navigate
