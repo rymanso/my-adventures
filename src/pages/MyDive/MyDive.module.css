@@ -10,5 +10,17 @@
 }
 
 .container * {
-  color: white;
+  color: aliceblue;
+}
+
+.priceList {
+  list-style: none;
+  padding-left: 0;
+}
+.priceList li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: aliceblue dashed 1px;
+  align-items: center;
+  gap: 10px;
 }
