@@ -8,24 +8,62 @@ import fishing from "./fishing.webp";
 import fishingMorning from "./fishingmorning.jpeg";
 import moocho from "./moocho.jpeg";
 import sajee from "./sajee.jpeg";
-
 import styles from "./MyDive.module.css";
 
+import { useEffect } from "react";
+import { Header } from "../../components/Header/Header";
 import { GridPage, GridTextBox } from "../../components/GridPage/GridPage";
 
+import { HashLink } from "react-router-hash-link";
+
 export const MyDive = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+
+    script.src = "https://use.typekit.net/foobar.js";
+    script.async = true;
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
-    <div className={styles.container}>
-      <GridPage title="My Dive">
+    <div className={styles.container} id="top">
+      <Header />
+      <h1 className={styles.pageTitle}>My Dive</h1>
+      <div className={styles.navigation}>
+        <HashLink smooth to="#about">
+          About
+        </HashLink>
+        <HashLink smooth to="#activities">
+          Activities
+        </HashLink>
+        <HashLink smooth to="#team">
+          Team
+        </HashLink>
+        <HashLink smooth to="#prices">
+          Prices
+        </HashLink>
+        <HashLink smooth to="#gallery">
+          Gallery
+        </HashLink>
+      </div>
+
+      <GridPage id="about">
         <img src={tanks} alt="Divers with tanks" />
         <GridTextBox title="About Us">
-          Welcome to My Adventures, the world's first floating dive center in
-          the Maldives! Immerse yourself in unparalleled underwater experiences
-          aboard our unique platform. With daily dive trips and expert PADI
-          courses, our certified team ensures unforgettable adventures beneath
-          the waves. Discover the magic of the Maldives with us, where every
-          dive is a journey into paradise.
+          Welcome to My Adventures, Maldives' favorite floating dive center!
+          Immerse yourself in unparalleled underwater experiences aboard our
+          unique platform. With daily dive trips and expert PADI courses, our
+          certified team ensures unforgettable adventures beneath the waves.
+          Discover the magic of the Maldives with us, where every dive is a
+          journey into paradise.
         </GridTextBox>
+      </GridPage>
+      <GridPage title="Activities" id="activities">
         <GridTextBox title="Fun Dives">
           Dive into excitement with our thrilling adventures! From encounters
           with majestic sharks and gentle mantas to the mystery of night dives
@@ -74,6 +112,8 @@ export const MyDive = () => {
         </GridTextBox>
         <img src={bbq} alt="BBQ" />
         <img src={moocho} alt="Man diver" />
+      </GridPage>
+      <GridPage title="Team" id="team">
         <GridTextBox title="Hi, I am Moocho">
           "Yo-ho! I'm Moocho, a captain and diver for two decades, exploring the
           Maldives' depths year-round. From coral to currents, I navigate
@@ -90,6 +130,8 @@ export const MyDive = () => {
           together!"
         </GridTextBox>
         <img src={sajee} alt="Man with long hair" />
+      </GridPage>
+      <GridPage title="Prices" id="prices">
         <GridTextBox title="Fun Dive Price">
           <ul className={styles.priceList}>
             <li>

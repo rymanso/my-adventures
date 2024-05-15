@@ -1,14 +1,10 @@
-import { Header } from "../Header/Header";
 import styles from "./GridPage.module.css";
-export const GridPage = ({ title, children }) => {
+export const GridPage = ({ title, children, id }) => {
   return (
-    <>
-      <Header />
-      <div className={styles.container}>
-        <div className={styles.title}>{title}</div>
-        <div className={styles.grid}>{children}</div>
-      </div>
-    </>
+    <div className={styles.container} id={id}>
+      <div className={styles.title}>{title}</div>
+      <div className={styles.grid}>{children}</div>
+    </div>
   );
 };
 

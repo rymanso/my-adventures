@@ -9,6 +9,12 @@
   background-size: cover;
 }
 
+.pageTitle {
+  font-size: 58px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .container * {
   color: aliceblue;
 }
@@ -23,4 +29,10 @@
   border-bottom: aliceblue dashed 1px;
   align-items: center;
   gap: 10px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
 }
