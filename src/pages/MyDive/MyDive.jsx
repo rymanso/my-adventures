@@ -44,12 +44,12 @@ export const MyDive = () => {
         <HashLink smooth to="#team">
           Team
         </HashLink>
-        <HashLink smooth to="#prices">
+        {/* <HashLink smooth to="#prices">
           Prices
         </HashLink>
         <HashLink smooth to="#gallery">
           Gallery
-        </HashLink>
+        </HashLink> */}
       </div>
 
       <GridPage id="about">
@@ -131,7 +131,7 @@ export const MyDive = () => {
         </GridTextBox>
         <img src={sajee} alt="Man with long hair" />
       </GridPage>
-      <GridPage title="Prices" id="prices">
+      {/* <GridPage title="Prices" id="prices">
         <GridTextBox title="Fun Dive Price">
           <ul className={styles.priceList}>
             <li>
@@ -265,7 +265,7 @@ export const MyDive = () => {
             </li>
           </ul>
         </GridTextBox>
-      </GridPage>
+      </GridPage> */}
     </div>
   );
 };
