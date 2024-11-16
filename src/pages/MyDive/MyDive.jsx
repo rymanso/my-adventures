@@ -12,7 +12,11 @@ import styles from "./MyDive.module.css";
 
 import { useEffect } from "react";
 import { Header } from "../../components/Header/Header";
-import { GridPage, GridTextBox } from "../../components/GridPage/GridPage";
+import {
+  GridPage,
+  GridTextBox,
+  Section,
+} from "../../components/GridPage/GridPage";
 
 import { HashLink } from "react-router-hash-link";
 
@@ -43,6 +47,9 @@ export const MyDive = () => {
         </HashLink>
         <HashLink smooth to="#team">
           Team
+        </HashLink>
+        <HashLink smooth to="#brochure">
+          Brochure
         </HashLink>
         {/* <HashLink smooth to="#prices">
           Prices
@@ -131,6 +138,14 @@ export const MyDive = () => {
         </GridTextBox>
         <img src={sajee} alt="Man with long hair" />
       </GridPage>
+      <Section title="Brochure" id="brochure">
+        <iframe
+          src="https://drive.google.com/file/d/1y82yeq09AwLLbc6WPWpGtoNS1RYsN03Q/preview"
+          width="100%"
+          max-width="100%"
+          height="700"
+        ></iframe>
+      </Section>
       {/* <GridPage title="Prices" id="prices">
         <GridTextBox title="Fun Dive Price">
           <ul className={styles.priceList}>
